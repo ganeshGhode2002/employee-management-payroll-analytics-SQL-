@@ -1,0 +1,20 @@
++-------------+      +--------------+      +-----------+
+| departments |1    n|  employees   |1    n|  salary   |
+|-------------|------|--------------|------|-----------|
+| dept_id PK  |      | emp_id PK    |      | salary_id |
+| name        |      | first_name   |      | emp_id FK |
+| location    |      | last_name    |      | basic     |
++-------------+      | dept_id FK   |      | hra       |
+                     | join_date    |      | allowances|
+                     | role         |      | deductions|
+                     +--------------+      | month     |
+                                           +-----------+
+
+                    +------------+
+                    | attendance |
+                    |------------|
+                    | att_id PK  |
+                    | emp_id FK  |
+                    | date       |
+                    | status     | -- ('P','A','L')
+                    +------------+

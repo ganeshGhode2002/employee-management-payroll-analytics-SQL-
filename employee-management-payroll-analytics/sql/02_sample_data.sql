@@ -5,7 +5,6 @@ INSERT INTO departments (name, location) VALUES
 ('Finance','Mumbai'),
 ('QA','Pune');
 
-
 -- Employees
 INSERT INTO employees (first_name,last_name,email,dept_id,role,join_date,is_active) VALUES
 ('Rahul','Patil','rahul.patil@example.com',1,'Software Engineer','2023-02-15',true),
@@ -15,7 +14,6 @@ INSERT INTO employees (first_name,last_name,email,dept_id,role,join_date,is_acti
 ('Vikram','Joshi','vikram.joshi@example.com',4,'QA Engineer','2023-09-01',true),
 ('Karan','Mehta','karan.mehta@example.com',1,'DevOps Engineer','2020-11-11',true);
 
-
 -- Salary (month as YEAR integer like 2025)
 INSERT INTO salary (emp_id, month, basic, hra, allowances, deductions, net_pay) VALUES
 (1,2025,40000,8000,2000,1500,46500),
@@ -24,7 +22,6 @@ INSERT INTO salary (emp_id, month, basic, hra, allowances, deductions, net_pay) 
 (4,2025,45000,9000,1500,2000,51500),
 (5,2025,35000,7000,1200,1200,42000),
 (6,2025,55000,11000,3000,2000,67000);
-
 
 -- Attendance (simulate 10 days for simplicity)
 INSERT INTO attendance (emp_id, date, status) VALUES

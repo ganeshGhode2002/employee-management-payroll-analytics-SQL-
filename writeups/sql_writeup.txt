@@ -1,0 +1,21 @@
+In this project, I designed and implemented a complete SQL-based Employee Management & Payroll Analytics system. The main goal of the project was to build a structured database that could store employee information, department details, monthly salary records, and daily attendance data in an organized and efficient way.
+
+I started by creating the entire database schema using four tables: departments, employees, salary, and attendance. Each table was connected through proper primary and foreign keys, ensuring clean relationships and avoiding duplicate or inconsistent entries. After setting up the schema, I inserted sample but realistic corporate-style data to simulate a real working environment.
+
+The core part of the project involved writing SQL queries to generate meaningful insights. I used JOIN, GROUP BY, ORDER BY, aggregate functions, subqueries, and CTEs to answer business questions like:
+
+total employees in each department
+
+highest and lowest salary
+
+average payroll per department
+
+monthly attendance percentage
+
+employees eligible for bonus
+
+full payroll summary for the month
+
+These queries helped convert raw data into actionable reports, similar to what HR and finance teams use in real companies.
+
+Overall, this project strengthened my understanding of database design, SQL querying, and business analytics. It reflects how SQL can be used to support real corporate processes like payroll, attendance tracking, and workforce management.

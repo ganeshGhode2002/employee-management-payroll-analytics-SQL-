@@ -3,4 +3,4 @@
 
 SQL project demo
 
-Images/project-structure.png
+![Project Structure](Images/project-structure.png)

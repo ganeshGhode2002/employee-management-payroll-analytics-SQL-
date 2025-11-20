@@ -1,0 +1,46 @@
+EMPLOYEE MANAGEMENT & PAYROLL ANALYTICS - ER DIAGRAM
+
++-------------+          +--------------+          +-----------+
+| departments | 1      n |  employees   | 1      n |  salary   |
+|-------------|----------|--------------|----------|-----------|
+| dept_id PK  |          | emp_id PK    |          | salary_id PK
+| name        |          | first_name   |          | emp_id FK
+| location    |          | last_name    |          | basic
++-------------+          | email        |          | hra
+                         | dept_id FK   |          | allowances
+                         | role         |          | deductions
+                         | join_date    |          | net_pay
+                         | is_active    |          | month (year)
+                         +--------------+          +-----------+
+
+
+                     +------------------+
+                     |    attendance    |
+                     |------------------|
+                     | att_id PK        |
+                     | emp_id FK        |
+                     | date             |
+                     | status (P/A/L)   |
+                     +------------------+
+
+RELATIONSHIPS:
+---------------------------------------------
+1. departments  (1) ---- (n) employees
+   - One department has many employees.
+   - employees.dept_id → departments.dept_id
+
+2. employees  (1) ---- (n) salary
+   - One employee can have monthly salary records.
+   - salary.emp_id → employees.emp_id
+
+3. employees  (1) ---- (n) attendance
+   - One employee has many attendance records.
+   - attendance.emp_id → employees.emp_id
+
+NOTES:
+---------------------------------------------
+- dept_id, emp_id, salary_id, att_id are primary keys.
+- email is unique.
+- salary table stores one row per month per employee.
+- attendance.status must be P (Present), A (Absent), L (Leave).
+
